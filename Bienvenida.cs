@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryBarrazaAppSorteo
 {
-    public partial class Bienvenida : Form
+    public partial class frmBienvenida : Form
     {
-        public Bienvenida()
+        public frmBienvenida()
         {
             InitializeComponent();
         }
