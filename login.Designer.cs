@@ -35,7 +35,7 @@
             label3 = new Label();
             txtusuario = new TextBox();
             txtContraseña = new TextBox();
-            comboBox1 = new ComboBox();
+            cmbModulo = new ComboBox();
             SuspendLayout();
             // 
             // btnCancelar
@@ -47,6 +47,7 @@
             btnCancelar.TabIndex = 0;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnAceptar
             // 
@@ -57,6 +58,7 @@
             btnAceptar.TabIndex = 1;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // label1
             // 
@@ -110,14 +112,13 @@
             txtContraseña.Size = new Size(121, 29);
             txtContraseña.TabIndex = 6;
             // 
-            // comboBox1
+            // cmbModulo
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "ADM ", "SIST", "COM", "VTA" });
-            comboBox1.Location = new Point(202, 203);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 7;
+            cmbModulo.FormattingEnabled = true;
+            cmbModulo.Location = new Point(202, 203);
+            cmbModulo.Name = "cmbModulo";
+            cmbModulo.Size = new Size(121, 23);
+            cmbModulo.TabIndex = 7;
             // 
             // login
             // 
@@ -125,7 +126,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(800, 450);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbModulo);
             Controls.Add(txtContraseña);
             Controls.Add(txtusuario);
             Controls.Add(label3);
@@ -149,6 +150,6 @@
         private Label label3;
         private TextBox txtusuario;
         private TextBox txtContraseña;
-        private ComboBox comboBox1;
+        private ComboBox cmbModulo;
     }
 }
